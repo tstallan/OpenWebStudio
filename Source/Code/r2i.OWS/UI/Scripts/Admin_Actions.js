@@ -2094,7 +2094,7 @@ function onGeneralSave(template,action)
 
 function onOpenConfigLoad(template,action)
 {
-	ows.Create('ConfigurationList',0,20,_OWS_.CModuleId+':ConfigurationList,'+_OWS_.ResourceFile+':Admin.aspx.resx,'+_OWS_.ResourceKey+':OWS.Configuration.List','','',false,-1,false,'ConfigurationList','ConfigListPager');
+	ows.Create('ConfigurationList',0,200,_OWS_.CModuleId+':ConfigurationList,'+_OWS_.ResourceFile+':Admin.aspx.resx,'+_OWS_.ResourceKey+':OWS.Configuration.List','','',false,-1,false,'ConfigurationList','ConfigListPager');
 }
 
 function onOpenConfigSave(template,action)
