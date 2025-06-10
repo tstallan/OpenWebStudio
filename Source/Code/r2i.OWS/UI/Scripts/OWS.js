@@ -520,6 +520,8 @@ this.GetFormElementValue = function GetFormElementValue(formId,name)
 			   switch(elements[i].type) 
 			   { 
 					case 'text':
+					case 'tel': //Tony Added telephone
+					case 'email':	  //Tony Added email					   
 					case 'password':
 					case 'textarea':
 						value += this.GetElementName(elements[i].name) + "=" + encodeURIComponent(elements[i].value);
@@ -589,6 +591,8 @@ this.GetForm = function GetForm(fobj)
 			   switch(fobj.elements[i].type) 
 			   { 
 					case 'text':
+					case 'tel': //Tony Added telephone
+					case 'email':	  //Tony Added email						   
 					case 'password':
 					case 'textarea':
 						value += this.GetElementName(fobj.elements[i].name) + "=" + encodeURIComponent(fobj.elements[i].value);
